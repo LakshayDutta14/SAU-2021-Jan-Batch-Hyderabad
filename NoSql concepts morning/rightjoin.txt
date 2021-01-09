@@ -1,0 +1,8 @@
+QUERY
+
+SELECT *
+FROM `travel-sample` r
+RIGHT JOIN `travel-sample` a
+ON r.airlineid = META(a).id
+WHERE r.sourceairport = "SFO"
+
