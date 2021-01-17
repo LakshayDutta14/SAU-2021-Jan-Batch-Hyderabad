@@ -1,0 +1,24 @@
+<table class="table table-hover table-dark">
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+    </tr>
+    <tr *ngFor="let d of products" class="bg-warning">      
+        <td>    
+          {{d.id}}
+        </td>    
+        <td>    
+          {{d.name}}    
+        </td>    
+        <td>    
+          {{d.username}}    
+        </td> 
+        <td>
+            {{d.email}}
+        </td>    
+    </tr>    
+</table>
+         
+    

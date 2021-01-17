@@ -1,0 +1,17 @@
+
+<div class="p-3 mb-2 bg-primary text-white">
+    <h2>Simple Calculator</h2>
+    <label>NUMBER 1:<input type="number"  class="form-control"    [(ngModel)]="firstnumber"></label>
+    <label>NUMBER 2:<input type="number" class="form-control"   [(ngModel)]="secondnumber"></label>
+    <br>
+    <br>
+    <button (click)="addition()" type="submit" class="btn btn-warning" style="margin-right: 16px">Addition</button>
+    <button (click)="subtraction()" type="submit" class="btn btn-warning" style="margin-right: 16px" >Subtraction</button>
+    <br>
+    <br>
+    <label>RESULT:<input type="number" class="form-control" [(ngModel)]="result"></label>
+    <br>
+    <br>
+    </div>
+    <button routerLink="/page2" class="btn btn-danger" style="margin-right: 16px">CLICK TO GO TO PAGE 2</button>
+<button routerLink="/" class="btn btn-danger" style="margin-right: 16px">CLICK TO GO TO HOME PAGE</button>

@@ -1,0 +1,50 @@
+<form [formGroup]="myform">
+<label>
+    First Name:
+    <input type="text"  formControlName="firstname">
+  </label>
+  <label>
+    Last Name:
+    <input type="text"  formControlName="lastname">
+  </label>
+  <label>
+    Phone Number:
+    <input type="text"  formControlName="phonenumber">
+  </label>
+  <label>
+    Email:
+    <input type="text"  formControlName="email">
+  </label>
+  Date:
+  <label><input type="date" formControlName="date" ></label>
+  <p>
+    <button (click)="Submit()" class="btn btn-warning">Click Me To Add Above Details</button>
+  </p>
+  <div>
+      <table class="table table-dark">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>PhoneNumber</th>
+            <th>email</th>
+            <th>date</th>
+        <tr *ngFor="let d of t" class="bg-warning" >      
+              <td >    
+                {{d.firstname|lowercase}}
+              </td>    
+              <td>    
+                {{d.lastname|lowercase}}    
+              </td>    
+              <td>    
+                {{d.phonenumber}}    
+              </td> 
+              <td>    
+                {{d.email}}    
+              </td>
+              <td>
+                  {{d.date|date:'dd MMMM yyyy'}}
+              </td>    
+          </tr>    
+      </table>
+  </div>
+  </form>
