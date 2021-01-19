@@ -1,0 +1,16 @@
+package jaxb;
+import java.util.List;
+import javax.xml.bind.annotation.*;
+
+@XmlRootElement(name = "students")
+public class Students {
+	Student Studentslist;
+	@XmlElement(name="student")
+	public Student getStudent() {
+		return(Studentslist);
+	}
+public void setStudentss(Student Studentslist)
+{
+	this.Studentslist=Studentslist;
+}
+}

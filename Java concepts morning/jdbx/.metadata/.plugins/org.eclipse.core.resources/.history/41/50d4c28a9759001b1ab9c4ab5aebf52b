@@ -1,0 +1,24 @@
+package jaxb;
+import javax.xml.bind.*;
+import java.io.*;
+
+public class Studentjaxb {
+	
+	public void unmarshall(){
+		  try {
+		     JAXBContext jaxbContext = JAXBContext.newInstance(Student.class);
+
+		     Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		     Student stu= (Student) jaxbUnmarshaller.unmarshal(file);
+
+		     System.out.println(stu.getRoll()+" "+stu.getMarks()+" "+stu.getSubject());
+		     List<Studentss> list=stu.getStudentss();
+		     for(Studentss stu:list)
+		       System.out.println(stu.getRoll()+" "+stu.getMarks()+"  "+stu.getSubject());
+
+		   } catch (JAXBException e) {
+		     e.printStackTrace();
+		   }
+		}
+
+}

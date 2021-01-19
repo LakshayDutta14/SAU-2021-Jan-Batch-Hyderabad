@@ -1,0 +1,54 @@
+package jaxb;
+import java.util.List;
+import javax.xml.bind.annotation.*;
+
+
+
+//@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlType(propOrder={"roll", "marks", "subject", "Studentslist"})
+public class Student {
+
+	private int roll, marks;
+	private String subject;
+	public List<Student> Studentslist;
+	@XmlElement(name="roll")
+	public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	@XmlElement(name="marks")
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	@XmlElement(name="subject")
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	@XmlElement(name="student")
+    public List<Student> getStudent() {
+      return Studentslist;
+    }
+    public void setStudentss(List<Student> students) {
+      this.Studentslist = students;
+    }
+//	public Student(int roll, int marks, String subject) {
+//		super();
+//		this.roll = roll;
+//		this.marks = marks;
+//		this.subject = subject;
+//	}
+//	public Student() {
+//		super();
+//	}
+	
+	
+	
+}

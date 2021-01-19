@@ -1,0 +1,44 @@
+package jaxb;
+import java.io.Serializable;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+@XmlRootElement(name = "student")
+@XmlAccessorType(XmlAccessType.PROPERTY)
+public class Student implements Serializable {
+     
+    private static final long serialVersionUID = 1L;
+    @XmlElement
+    private Integer roll;
+    @XmlElement
+    private Integer marks;
+    @XmlElement
+    private String subject;
+     
+    public Student() {
+        super();
+    }
+ 
+    public Student(Integer roll,Integer marks, String subject) {
+        super();
+        this.roll = roll;
+        this.marks = marks;
+        this.subject=subject;
+    }
+    public Integer getroll()
+    {
+    	return(this.roll);
+    }
+    public Integer getmarks()
+    {
+    	return(this.marks);
+    }
+    
+    //Setters and Getters
+ 
+    @Override
+    public String toString() {
+        return "Student [roll=" + roll + " marks=" +marks +", subject=" + subject + "]";
+    }
+}

@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+C:\Users\DELL\Desktop\jdbx\.metadata\.plugins\org.eclipse.jdt.core
+149180797.index
+2087543858.index
+719460018.index
+2890041369.index
+2477662572.index
+4055795667.index
+4232864973.index
+1716674087.index
+3037800427.index
+2871997696.index
+4158897450.index
+3396129475.index
+43121119.index
+2593743418.index
+3460880079.index
+1762247599.index
+3599453974.index
+2961640999.index

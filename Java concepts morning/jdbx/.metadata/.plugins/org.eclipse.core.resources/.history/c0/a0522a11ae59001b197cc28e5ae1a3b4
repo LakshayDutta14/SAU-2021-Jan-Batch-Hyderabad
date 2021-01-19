@@ -1,0 +1,52 @@
+package jaxb;
+import java.util.List;
+import javax.xml.bind.annotation.*;
+
+@XmlRootElement(name = "students")
+
+public class Student {
+
+	private int roll, marks;
+	private String subject;
+	public List<Student> students;
+	@XmlElement
+	public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	@XmlElement
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	@XmlElement
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	@XmlElement
+    public List<Student> getStudent() {
+      return students;
+    }
+    public void setStudentss(List<Student> students) {
+      this.students = students;
+    }
+	public Student(int roll, int marks, String subject) {
+		super();
+		this.roll = roll;
+		this.marks = marks;
+		this.subject = subject;
+	}
+	public Student() {
+		super();
+	}
+	
+	
+	
+}
