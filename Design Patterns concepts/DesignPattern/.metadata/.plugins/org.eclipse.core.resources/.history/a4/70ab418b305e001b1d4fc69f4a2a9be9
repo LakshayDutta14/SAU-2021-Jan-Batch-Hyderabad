@@ -1,0 +1,23 @@
+package com.accolite.example;
+
+public class Square implements Shape{
+
+	private String color;
+	  
+	   private int side;
+
+	   public Square(String color){
+	      this.color = color;		
+	   }
+
+	  
+	   public void setSide(int side) {
+	      this.side = side;
+	   }
+
+	@Override
+	public void draw() {
+		System.out.println("Sqaure of side "+ side + "implemented" );
+		
+	}
+}
