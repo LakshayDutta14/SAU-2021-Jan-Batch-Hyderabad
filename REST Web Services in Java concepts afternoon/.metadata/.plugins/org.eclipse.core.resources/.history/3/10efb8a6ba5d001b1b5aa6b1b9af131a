@@ -1,0 +1,15 @@
+package com.accolite.restapi_au.service;
+
+import com.accolite.restapi_au.entity.User;
+
+public interface UserService {
+    public User addUser(User user);
+
+    public User getUserById(Integer id);
+    
+    public User getUserByEmailId(String Email);
+    
+    public User updateUser(User user);
+	
+	public void deleteUser(Integer id);
+}
