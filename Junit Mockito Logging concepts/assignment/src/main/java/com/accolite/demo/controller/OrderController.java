@@ -42,24 +42,5 @@ public class OrderController {
 		String res=service.addItem(orderId, item);
 		return ResponseEntity.ok(res);
 	}
-//	@GetMapping("item/get/{orderid}")
-//	public ResponseEntity<Map<Integer, Item>> getItems(@PathVariable("orderid") Integer orderId)
-//	{
-//		Map<Integer, Item> res=os.getItem(orderId);
-//		return ResponseEntity.ok(res);
-//	}
-//	@DeleteMapping("/item/delete/{orderid}/{itemId}")
-//	public ResponseEntity<String> deleteItem(@PathVariable("orderid") Integer orderId,@PathVariable("itemId") Integer itemId)
-//	{
-////		Map<Integer, Item> res=os.getItem(orderId);
-//		String res = os.deleteItem(orderId, itemId);
-//        return ResponseEntity.ok(res);
-//	}
-//	@PutMapping("/item/update/{orderid}")
-//	public ResponseEntity<String> updateItem(@PathVariable("orderid") Integer orderId,@RequestBody Item item)
-//	{
-////		Map<Integer, Item> res=os.getItem(orderId);
-//		String res = os.updateItem(orderId,item);
-//        return ResponseEntity.ok(res);
-//	}
+
 }
